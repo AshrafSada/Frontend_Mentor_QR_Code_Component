@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs-paragraph: 15px;
+    --border-radius: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg {
+    display: block;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    line-height: 1.2;
+}
+section {
+    max-width: calc(18rem + 1.5em + 2rem);
+}
+h1 {
+    font-size: 1.5em;
+}
+h1,
+p {
+    width: 17.5rem;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-color: var(--clr-light-gray);
+    }
+}
+
+/* helper classes */
+
+.top-curved {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+.bottom-curved {
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.flex-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+.gap-3 {
+    gap: 3rem;
+}
+.gap-4 {
+    gap: 4rem;
+}
+.gap-5 {
+    gap: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+.mt-4 {
+    margin-top: 4rem;
+}
+.mt-5 {
+    margin-top: 5rem;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mb-3 {
+    margin-bottom: 3rem;
+}
+.mb-4 {
+    margin-bottom: 4rem;
+}
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.ma-1 {
+    margin: 1rem;
+}
+.ma-2 {
+    margin: 2rem;
+}
+.ma-3 {
+    margin: 3rem;
+}
+.ma-4 {
+    margin: 4rem;
+}
+.ma-5 {
+    margin: 5rem;
+}
+
+.pa-1 {
+    padding: 1rem;
+}
+.pa-2 {
+    padding: 2rem;
+}
+.pa-3 {
+    padding: 3rem;
+}
+.pa-4 {
+    padding: 4rem;
+}
+.pa-5 {
+    padding: 5rem;
+}
+
+/* typography */
+.text-regular {
+    font-weight: var(--fw-regular);
+}
+.text-bold {
+    font-weight: var(--fw-bold);
+}
+.fs-paragraph {
+    font-size: var(--fs-paragraph);
+}
+/* text colors */
+
+.text-white {
+    color: var(--clr-white);
+}
+.text-light-gray {
+    color: var(--clr-light-gray);
+}
+.text-grayish-blue {
+    color: var(--clr-grayish-blue);
+}
+.text-dark-blue {
+    color: var(--clr-dark-blue);
+}
+
+/* background colors */
+.bg-white {
+    background-color: var(--clr-white);
+}
+.bg-light-gray {
+    background-color: var(--clr-light-gray);
+}
+.bg-grayish-blue {
+    background-color: var(--clr-grayish-blue);
+}
+.bg-dark-blue {
+    background-color: var(--clr-dark-blue);
+}
